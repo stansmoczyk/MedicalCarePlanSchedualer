@@ -305,7 +305,7 @@ namespace MedicalCarePlanSchedualer
             // SecondMedicationDisplayLabel
             // 
             this.SecondMedicationDisplayLabel.AutoSize = true;
-            this.SecondMedicationDisplayLabel.Location = new System.Drawing.Point(247, 82);
+            this.SecondMedicationDisplayLabel.Location = new System.Drawing.Point(231, 113);
             this.SecondMedicationDisplayLabel.Name = "SecondMedicationDisplayLabel";
             this.SecondMedicationDisplayLabel.Size = new System.Drawing.Size(0, 15);
             this.SecondMedicationDisplayLabel.TabIndex = 3;
@@ -313,7 +313,7 @@ namespace MedicalCarePlanSchedualer
             // FirstMedicationDisplayLabel
             // 
             this.FirstMedicationDisplayLabel.AutoSize = true;
-            this.FirstMedicationDisplayLabel.Location = new System.Drawing.Point(247, 23);
+            this.FirstMedicationDisplayLabel.Location = new System.Drawing.Point(231, 53);
             this.FirstMedicationDisplayLabel.Name = "FirstMedicationDisplayLabel";
             this.FirstMedicationDisplayLabel.Size = new System.Drawing.Size(0, 15);
             this.FirstMedicationDisplayLabel.TabIndex = 2;
@@ -350,14 +350,15 @@ namespace MedicalCarePlanSchedualer
             // 
             // TimePicker
             // 
-            this.TimePicker.CustomFormat = "\"hh:mm tt\"";
+            this.TimePicker.CustomFormat = "hh:mm tt";
             this.TimePicker.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.TimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.TimePicker.Location = new System.Drawing.Point(42, 107);
             this.TimePicker.Name = "TimePicker";
             this.TimePicker.ShowUpDown = true;
-            this.TimePicker.Size = new System.Drawing.Size(200, 23);
+            this.TimePicker.Size = new System.Drawing.Size(100, 23);
             this.TimePicker.TabIndex = 3;
+            this.TimePicker.Value = new System.DateTime(2021, 7, 10, 18, 45, 0, 0);
             // 
             // CalculateButton
             // 
@@ -367,6 +368,7 @@ namespace MedicalCarePlanSchedualer
             this.CalculateButton.TabIndex = 2;
             this.CalculateButton.Text = "Calculate Times";
             this.CalculateButton.UseVisualStyleBackColor = true;
+            this.CalculateButton.Click += new System.EventHandler(this.CalculateButton_Click);
             // 
             // InstructionsLabel
             // 
@@ -385,6 +387,7 @@ namespace MedicalCarePlanSchedualer
             this.ClearButton.TabIndex = 5;
             this.ClearButton.Text = "Clear";
             this.ClearButton.UseVisualStyleBackColor = true;
+            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
             // CloseButton
             // 
@@ -394,6 +397,7 @@ namespace MedicalCarePlanSchedualer
             this.CloseButton.TabIndex = 6;
             this.CloseButton.Text = "Close";
             this.CloseButton.UseVisualStyleBackColor = true;
+            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
             // 
             // Form1
             // 
